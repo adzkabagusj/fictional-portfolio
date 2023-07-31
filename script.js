@@ -1,23 +1,29 @@
-function temperature(){
-    //To convert celcius to farenheit
-    //(CEL * 9/5) + 32
-    var c = document.getElementById("celcius").value;
-    var f = (c * 9/5) + 32
-    document.getElementById("fahrenheit").value = f
-}
-
-function weight(){
-    //To convert KGs to Pounds
-    // KG * 2.2
-    var kg = document.getElementById("kilo").value;
-    var p = kg * 2.2
-    document.getElementById("pounds").value = p
-}
-
-function distance(){
-    //To convert KMs to Miles
-    // KM * 0.62137
-    var km = document.getElementById("km").value;
-    var m = km * 0.62137
-    document.getElementById("miles").value = m
-}
+function addRecommendation() {
+    // Get the message of the new recommendation
+    let recommendation = document.getElementById("new_recommendation");
+    // If the user has left a recommendation, display a pop-up
+    if (recommendation.value != null && recommendation.value.trim() != "") {
+      console.log("New recommendation added");
+      //Call showPopup here
+      showPopup(true);
+  
+      // Create a new 'recommendation' element and set it's value to the user's message
+      var element = document.createElement("div");
+      element.setAttribute("class","recommendation");
+      element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
+      // Add this element to the end of the list of recommendations
+      document.getElementById("all_recommendations").appendChild(element); 
+      
+      // Reset the value of the textarea
+      recommendation.value = "";
+    }
+  }
+  
+  function showPopup(bool) {
+    if (bool) {
+      document.getElementById('popup').style.visibility = 'visible'
+    } else {
+      document.getElementById('popup').style.visibility = 'hidden'
+    }
+  }
+  
