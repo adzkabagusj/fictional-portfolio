@@ -1,116 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <title>Robert J. Oppenheimer - Portfolio</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="./script.js"></script>
     </head>
     <body>
-        <section id="home">
-            <header>
-            Unit Conversions
-            </header>
-            <nav class="topdiv">
+    <!-- Navigation Bar -->
+        <nav>
+            <div id="home">
+                <div class="profile_name">
+                    Robert J. Oppenheimer
+                    <div class="contact_info">
+                        
+                        jdoe@jeemail.com
+                    </div>
+
+                    <div style="clear:both;"></div>
+                    
+                    <div class="contact_info">
+                        
+                        +13456764598
+                    </div>
+                </div>
+                <div class="topdiv">
+                    <a class="topmenu" href="#about-me">About Me</a>
+                    <a class="topmenu" href="#skills">Skills</a>
+                    <a class="topmenu" href="#projects">Projects</a>
+                    <a class="topmenu" href="#recommendations">Recommendations</a>
+                </div>
+            </div>    
+        </nav>
+
+        <!-- About Me -->
+        <section id="about-me" class="container">
             <div>
-                <a href="#temperature"><button class="topmenu">Temperature</button></a>
-                <a href="#weight"><button class="topmenu">Weight</button></a>
-                <a href="#distance"><button class="topmenu">Distance</button></a>
+                <h1>
+                    Hi, I'm Robert.
+                </h1>
+                <p>
+                    I am a full stack developer with 2 years of experience in both application and presentation layers.
+                    I have worked on applications and microservices deployed on IBM Cloud. 
+                    I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+                </p>
             </div>
-            </nav>
-        </section>    
-
-        <div id="all-conversion-sections">
-
-            <section id="temperature">
-            <div id="tmp">
-                <figure>
-                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="150px"/>
-                <figcaption>Celcius to Farenheit Conversion</figcaption>
-                </figure>
-                <article>
-
-                <fieldset>
-                    <legend>Temperature</legend>
-                    <label for="Temperature">Celsius</label> <br/>
-
-                    <input type="number" id="celcius"> <br/>
-
-                    <button id="tempConvert" class="convertButton" onclick="temperature()"> Convert </button> <br/>
-
-                    <input type="number" id="fahrenheit"> <br/>
-
-                    <label for="Temperature">Fahrenheit</label>
-                </fieldset>
-                <aside>
-                    To convert celsuis to fahrenheit yourself, use this formula replacing the `C` with your temperature in celsuis: (C × 9/5) + 32
-                </aside>
-                </article>
+            
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Oppenheimer_%28cropped%29.jpg/330px-Oppenheimer_%28cropped%29.jpg" class="profile_image"/>
             </div>
-            </section>
 
-        
-            <section id="weight">          
-            <div id="wgt">
-                <figure>
-                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"  width="150px"/>
-                <figcaption>Kilograms to Pound Conversion</figcaption>
-                </figure>
-                <article>
-                <fieldset>
-                    <legend>Weight</legend>
-                    <label for="Weight">KG</label> <br/>
+        </section>
+                
+        <!-- Skills -->
+        <section id="skills">
 
-                    <input type="number" id="kilo"> <br/>
+            <h2>Skills</h2>
 
-                    <button id="wgtConvert" class="convertButton" onclick="weight()"> Convert </button>  <br/>
+            <div style="clear:both;"></div>
 
-    
-                    <input type="number" id="pounds">  <br/>
+                <div class="all_skills">
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png"/>
+                        <h5>HTML</h5>
+                        <p>2 years experience</p>
+                    </div>  
 
-                    <label for="Weight">Pounds</label>    
-                </fieldset>
-                <aside>
-                    To convert kilograms to pounds yourself, use this formula replacing the `kg` with your weight in kilograms: kg x 2.205
-                </aside>      
-                </article>
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"/>
+                        <h5>JavaScript</h5>
+                        <p>1.5 years experience</p>
+                    </div>  
+
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"/>
+                        <h5>Java</h5>
+                        <p>0.5 years experience</p>
+                    </div>  
+
+                    <div class="skill">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                        <h5>React</h5>
+                        <p>1 years experience</p>
+                    </div> 
+
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png"/>
+                        <h5>Node.js</h5>
+                        <p>1 years experience</p>
+                    </div>  
+
+                    <div class="skill">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png"/>
+                        <h5>CSS</h5>
+                        <p>2 years experience</p>
+                    </div> 
+                </div>
             </div>
-            </section>
+        </section>
+            
+        <!-- Projects -->
+        <section class="projects" id="projects">
+        <h2>
+            Projects
+        </h2>
+        <div style="clear:both;"></div>
 
-            <section id="distance">
-            <div id="dst">
-                <figure>
-                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"  width="150px"/>
-                <figcaption>Kilometers to Miles Conversion</figcaption>
-                </figure>
-                <article>
-                <fieldset>
-                    <legend>Distance</legend>
-                    <label for="Distance">KM</label> <br/>
-
-                    <input type="number" id="km">  <br/>
-
-                    <button id="dstConvert" class="convertButton" onclick="distance()"> Convert </button> <br/>
-
-                    <input type="number" id="miles">  <br/>
-
-                    <label for="Distance">Miles</label>
-                </fieldset>
-                <aside>
-                    To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
-                </aside>
-        
-                </article>
+            <div id="projects-container" class="projects-container">
+                <div class="project-card">
+                    <h3>Chatbot</h3>
+                    <ul>
+                    <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="project-card">
+                    <h3>Sentiment Analyzer</h3>
+                    <ul>
+                    <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="project-card">
+                    <h3>Fashion Website</h3>
+                    <ul>
+                    <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+                    </ul>
+                </div>
             </div>
-            </section>
+        </section>
+        <div style="clear:both;"></div>
 
+        <!-- Recommendations -->
+        <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div style="clear:both;"></div>
+        <div class="all_recommendations" id="all_recommendations">
+            <div class="recommendation">
+            <span>&#8220;</span>
+            Jane is a very quick learner and quickly grasps key concepts of Web development. 
+            She got a great attitude & she is an excellent team player. 
+            She has a curious mind and asks the right question. 
+            She takes initiative within a team and has potentials to lead the team.
+            <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+            <span>&#8220;</span>
+            Working with Jane has been an awesome experience. 
+            She is highly knowledgable and always goes the extra step to make sure everything is right. 
+            For any future projects that need her expertise I would definitely want to work with her again.
+            <span>&#8221;</span>
+            </div>
+            <div class="recommendation">
+            <span>&#8220;</span>
+            I had worked along with Jane during the initial phase of our venture which needed Web development. 
+            She is a committed resource who has in depth knowledge about the domain. 
+            She will be an asset for any organisation! 
+            <span>&#8221;</span>
+            </div>
+        </div>
+        </section>
+
+        <!-- Recommendation Form -->
+        <section id="contact">
+        <div class="flex_center">
+            <fieldset>
+            <legend class="introduction" >Leave a Recommendation</legend>          
+            <input type="text" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+            <div class="flex_center">
+                <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+            </fieldset>
+        </div>
+        </section>
+
+        <div class="iconbutton">
+            <a href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="white" width="75px">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <!--Add the code here for the logo to appear and the icon to be actionable-->
+            </a>
         </div>
 
-        <div id="go-home">
-        <a href="#home">
-            <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
-        </a>
+        <div class="popup" id="popup" class="flex_center">
+        <img src="html_finalprojimages/checkmark--outline.svg"/>
+        <h4>Thanks for leaving a recommendation!</h4>
+        <button onclick="showPopup(false)">Ok</button>
         </div>
-
-        <footer>Learn more about HTML and CSS as a part of IBM Fullstack Cloud Developer Certification</footer>
     </body>
 </html>
